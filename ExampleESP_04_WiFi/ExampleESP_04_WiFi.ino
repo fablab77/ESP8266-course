@@ -3,7 +3,7 @@
 // #include <WiFiClientSecure.h> // Required for HTTPS connections
 
 // Constants
-const char *ssid =  "fab";            // cannot be longer than 32 characters!
+const char *ssid =  "fablab";            // cannot be longer than 32 characters!
 const char *pass =  "fablab77";       // WiFi password
 const char* chat_server_endpoint = "http://nb3.me/chat/";
 
@@ -30,7 +30,7 @@ void loop()
    http.begin(chat_server_endpoint);      //Specify request destination
    // http.addHeader("Content-Type", "text/plain");  //Specify content-type header
    http.addHeader("Content-Type", "application/x-www-form-urlencoded");
-   int httpCode = http.POST("username=test1111&chat=Hello,ESP8266!");
+   int httpCode = http.POST("username=oleg_esp&chat=Hello,ESP8266!");
 
    String payload = http.getString();                  //Get the response payload
  
