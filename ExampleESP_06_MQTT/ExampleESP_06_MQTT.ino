@@ -24,7 +24,7 @@
 #include <WiFiClientSecure.h>
 #include <PubSubClient.h>
 
-const char *ssid =  "fab";            // cannot be longer than 32 characters!
+const char *ssid =  "fablab";            // cannot be longer than 32 characters!
 const char *pass =  "fablab77";       // WiFi password
 
 String prefix   = "/IoTmanager";     // global prefix for all topics - must be some as mobile device
